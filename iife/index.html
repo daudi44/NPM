@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+
+<script>
+    //Exemple tradicional NO IIFE
+    // function user(){
+    //     let email = 'daudi@iesebre.com';
+    //     var password = 'hola1234';
+    //     function usuariCorreu(){
+    //         console.log('Usuari: ' + email)
+    //     }
+    //
+    //     return{
+    //         usuariCorreu : usuariCorreu,
+    //         email : email
+    //     }
+    // }
+
+    //EXEMPLE IIFE
+    var dani = (function (){
+        let email = 'daudi@iesebre.com';
+        var password = 'hola1234';
+        function usuariCorreu(){
+            console.log('Usuari: ' + email)
+        }
+
+        return{
+            usuariCorreu : usuariCorreu,
+            email : email
+        }
+    })()
+
+    //De la manera tradicional hauríem d'afegir a sota aquesta comanda
+    //var dani = user()
+    dani.usuariCorreu()
+    console.log(dani.email);
+    console.log('Hola')
+
+
+    // (function () {
+    //
+    // })
+</script>
+
+</body>
+</html>
