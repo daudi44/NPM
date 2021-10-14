@@ -1,3 +1,3 @@
 # NPM
 
-Archius a la branca master.
+Arxius a la branca master.
