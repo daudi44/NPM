@@ -6,48 +6,17 @@
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
+    <script src="user.js"></script>
 </head>
 <body>
 
 <script>
-    //Exemple tradicional NO IIFE
-    // function user(){
-    //     let email = 'daudi@iesebre.com';
-    //     var password = 'hola1234';
-    //     function usuariCorreu(){
-    //         console.log('Usuari: ' + email)
-    //     }
-    //
-    //     return{
-    //         usuariCorreu : usuariCorreu,
-    //         email : email
-    //     }
-    // }
-
-    //EXEMPLE IIFE
-    var dani = (function (){
-        let email = 'daudi@iesebre.com';
-        var password = 'hola1234';
-        function usuariCorreu(){
-            console.log('Usuari: ' + email)
-        }
-
-        return{
-            usuariCorreu : usuariCorreu,
-            email : email
-        }
-    })()
-
-    //De la manera tradicional hauríem d'afegir a sota aquesta comanda
-    //var dani = user()
-    dani.usuariCorreu()
-    console.log(dani.email);
+    //Linia extra on declaro un nou email per al usuari
+    user.setEmail('acacha@gmail.com')
+    //Part comuna del programa
+    user.usuariCorreu()
+    console.log(user.email);
     console.log('Hola')
-
-
-    // (function () {
-    //
-    // })
 </script>
 
 </body>
