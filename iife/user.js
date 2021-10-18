@@ -7,12 +7,13 @@ var user = (function (e = 'daudi@iesebre.com'){
         console.log('Usuari: ' + email)
     }
 
+    function setEmail(com){
+        this.email = com;
+    }
+
     return{
         usuariCorreu : usuariCorreu,
         email : email,
-        //Creo funció per poder establir un correu al usuari
-        setEmail(com) {
-            this.email = com;
-        }
+        setEmail : setEmail
     }
 })()
