@@ -13,7 +13,6 @@ module.exports = (function (e = 'daudi@iesebre.com'){
     return{
         usuariCorreu : usuariCorreu,
         email : email,
-        //Creo funció per poder establir un correu al usuari
         setEmail : setEmail
     }
 })()
