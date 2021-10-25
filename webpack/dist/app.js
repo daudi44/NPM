@@ -1,0 +1,1 @@
+(()=>{"use strict";(function(i="daudi@iesebre.com"){let o=i;return{usuariCorreu:function(){console.log("Usuari: "+o)},email:o,setEmail:function(i){this.email=i}}})("acacha@gmail.com").usuariCorreu(),console.log("prova")})();
